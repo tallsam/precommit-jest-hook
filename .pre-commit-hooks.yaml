@@ -1,10 +1,10 @@
--   id: prettier
-    name: prettier
-    description: ''
-    entry: prettier --write --list-different --ignore-unknown
-    language: node
-    'types': [text]
-    args: []
-    require_serial: false
-    additional_dependencies: ["prettier@3.0.0"]
-    minimum_pre_commit_version: '0'
+- id: jest
+  name: jest
+  description: "Run jest tests"
+  entry: jest --no-cache
+  language: node
+  "types": [text]
+  args: []
+  require_serial: false
+  additional_dependencies: ["jest@29.3.1"]
+  minimum_pre_commit_version: "0"
